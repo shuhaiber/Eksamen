@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
+
+  /* DESIGN */
+
+:root{
+    --ff-primary: 'Roboto Slab', sarif;
+    --ff-secondary: 'Montserrat', sarif;
+
+    --fw-reg:  300;
+    --fx-bold: 900;
+
+    --clr-light:  #CBB5A4;   /*khaki*/
+    --clr-dark:   #42464C;   /*charcoal*/
+    --clr-accent: #E5E1DC;   /*platinium*/
+    --clr-base:   #FEEEEB;   /*lavenderblush*/
+    --clr-brown:  #684E3B;   /*coffee*/
+
+    --fs-h1:    4rem;
+    --fs-h2: 1.50rem;
+    --fs-h3: 1.25rem;
+    --fs-body:  1rem;
+
+}
+
+@media (min-width: 800px) {
+  :root{
+    --fs-h1:   4.25rem;
+    --fs-h2:   2.75rem;
+    --fs-h3:  1.125rem;
+    --fs-body:1.125rem;
+  }
+}
+
+/* styles */
+
+body {
+
+  background: var(--clr-base);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  text-align: center;
+
+}
+section{
+    padding: 0em 0em;
+}
+.img {
+  display: block;
+  max-width: 100%;
+
+}
+
+strong { font-weight: (--fw-bold)}
+
+/* Typografi */
+
+h1,
+h2,
+h3{
+  line-height: 1,1;
+  margin: 30;
+
+}
+
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.section__title{
+    margin-bottom: .25em;
+    margin-top: 27px;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-h2);
+}
+
+.section__title--intro strong {
+  display: block;   /* "bold tekst får sin egen linje" */
+}
+
+.section__subtitle{
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro,
+.section__subtitle--about{
+  background: var(--crl-accent);
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+
+}
+.section__subtitle--work {
+  color: var(--clr-accent);
+  front-weight: var(--fw-bold);
+  margin-bottom: 2em;
+}
+
+/* header */
+
+header{
+float: right 200px;
+position: relative;
+}
+
+.logo{
+  margin-right: auto;
+  margin-left: 8px;
+  margin-top: -20px;
+  float: left;
+  position: absolute;
+}
+
+.nav{
+  @media (min-width: 150px);
+  position: fixed;
+  /*background: var(--clr-dark);*/
+  color: var(--clr-brown);
+  position: relative;
+  margin: 12px auto;
+  margin-top: 27px;
+  width: 650px;
+  height: 30px;
+  background-color: var(--clr-base);
+  border-radius: 10px;
+
+.logo{
+    margin-right: auto;
+    margin-left: 8px;
+    float: left;
+  }
+}
+
+.nav__list{
+  list-style: none;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav__link{
+  color: inherit;
+  font-weight: bold;
+  font-weight: 100;
+}
+
+.nav__link:hover{
+  color: var(--clr-light);
+}
+
+nav a{
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--clr-base);
+  text-decoration: none;
+  line-height: 60px;
+  position: relative;
+  z-index: 1;
+  z-index: 1;
+  display:inline-block;
+  text-align:center;
+
+nav.animation{
+    position: absolute;
+    height: 100%
+    top: 0;
+    z-index: 0;
+    background: var(--clr-base);
+    width:100%
+    border-radius: 1px;
+  }
+}
+a:nth--child (1){
+width: 100px;
+}
+a:nth--child (2){
+width: 110px;
+}
+a:nth--child (3){
+width: 100px;
+}
+a:nth--child (4){
+width: 160px;
+}
+a:nth--child (5){
+width: 120px;
+}
+
+
+/* Intro section */
+.intro{
+  position: relative;
+  font-size: var(--fs-h3);
+}
+
+.intro__img{
+    grid-area: img;
+    min width: 50;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300, 350;
+}
+
+
+/* Multimediedesign */
+
+.section__title--introduktion{
+  position: relative;
+  text-align: center;
+}
+
+.introduktion{
+  position: relative;
+  text-align: center;
+
+}
+
+
+/* Mine projekter */
+
+.mine-projekter {
+  background-image:
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.portfolio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: center;
+
+}
+
+.portfolio__item{
+  background: var(--clr-accent);
+
+}
+
+.portfolio__img{
+  transition:
+  transform 550ms cubic;
+}
+
+
+/* Individuelle projekter */
+/* Animation */
+.sprite{
+  width: 493px;
+  height: 493px;
+  background: url(img/css.animation.png);
+animation: play 10s steps(22) infinite;
+}
+
+
+@keyframes play {
+  0% {background-position: 0px;}
+  100% {background-position: -11000px;}
+
+}
+
+
+.animeretportræt{
+  float: left;
+
+}
+
+.text{
+  float:inherit;
+}
+
+/*kontakt*/
+
+.kontakt__img{
+  grid-area: img;
+  display: block;
+  position: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 300px;
+}
+
+/* footre */
+.footer{
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  margin-left: 0;
+  padding: 0rem;
+  justify-content: space-between;
+  line-height: 0.10;
+  font-size: 14px;
+
+}
+
+.footer a {
+  color: inherit;
+
+}
