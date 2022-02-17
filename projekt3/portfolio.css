@@ -13,25 +13,25 @@
     --fw-reg:  300;
     --fx-bold: 900;
 
-    --clr-light:  #CBB5A4;   /*khaki*/
+    --clr-light:  #CBB5A4;   /*khaki*/           
     --clr-dark:   #42464C;   /*charcoal*/
     --clr-accent: #E5E1DC;   /*platinium*/
     --clr-base:   #FEEEEB;   /*lavenderblush*/
     --clr-brown:  #684E3B;   /*coffee*/
 
-    --fs-h1:    4rem;
-    --fs-h2: 1.50rem;
-    --fs-h3: 1.25rem;
-    --fs-body:  1rem;
+    --fs-h1:   68px;
+    --fs-h2:   44px;
+    --fs-h3:   19px;
+    --fs-body: 18px;
 
 }
 
 @media (min-width: 800px) {
   :root{
-    --fs-h1:   4.25rem;
-    --fs-h2:   2.75rem;
-    --fs-h3:  1.125rem;
-    --fs-body:1.125rem;
+    --fs-h1:   68px;
+    --fs-h2:   44px;
+    --fs-h3:   19px;
+    --fs-body: 18px;
   }
 }
 
@@ -48,24 +48,25 @@ body {
   text-align: center;
 
 }
+
 section{
-    padding: 0em 0em;
+    padding: 0px;
 }
+
 .img {
   display: block;
   max-width: 100%;
-
 }
 
-strong { font-weight: (--fw-bold)}
 
 /* Typografi */
 
 h1,
 h2,
 h3{
-  line-height: 1,1;
-  margin: 30;
+  line-height: 55px;
+  margin: 50px;
+  padding: 10px;
 
 }
 
@@ -75,7 +76,7 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 .section__title{
-    margin-bottom: .25em;
+    margin-bottom: 4px;
     margin-top: 27px;
 }
 
@@ -89,7 +90,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__subtitle{
-    margin: 0;
+    margin: 0px;
     font-size: var(--fs-h3);
 }
 
@@ -97,23 +98,23 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--about{
   background: var(--crl-accent);
   font-family: var(--ff-secondary);
-  margin-bottom: 1em;
+  margin-bottom: 16px;
 
 }
 .section__subtitle--work {
   color: var(--clr-accent);
-  front-weight: var(--fw-bold);
-  margin-bottom: 2em;
+  font-weight: var(--fw-bold);
+  margin-bottom: 2px;
 }
 
 /* header */
 
-header{
-float: right 200px;
+.header{
 position: relative;
 }
 
 .logo{
+  display: flex;
   margin-right: auto;
   margin-left: 8px;
   margin-top: -20px;
@@ -122,9 +123,7 @@ position: relative;
 }
 
 .nav{
-  @media (min-width: 150px);
   position: fixed;
-  /*background: var(--clr-dark);*/
   color: var(--clr-brown);
   position: relative;
   margin: 12px auto;
@@ -133,12 +132,6 @@ position: relative;
   height: 30px;
   background-color: var(--clr-base);
   border-radius: 10px;
-
-.logo{
-    margin-right: auto;
-    margin-left: 8px;
-    float: left;
-  }
 }
 
 .nav__list{
@@ -146,8 +139,8 @@ position: relative;
   display: flex;
   height: auto;
   flex-direction: row;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -170,36 +163,26 @@ nav a{
   line-height: 60px;
   position: relative;
   z-index: 1;
-  z-index: 1;
   display:inline-block;
   text-align:center;
+}
 
 nav.animation{
     position: absolute;
-    height: 100%
-    top: 0;
-    z-index: 0;
+    height: 100%;
+    top: 0px;
     background: var(--clr-base);
-    width:100%
+    width:100%;
     border-radius: 1px;
   }
-}
-a:nth--child (1){
-width: 100px;
-}
-a:nth--child (2){
-width: 110px;
-}
-a:nth--child (3){
-width: 100px;
-}
-a:nth--child (4){
-width: 160px;
-}
-a:nth--child (5){
-width: 120px;
-}
 
+.nav__c2a{
+  color: var(--clr-brown);
+  border-radius: 30px;
+  border-style: solid;
+  border-top: 3px;
+  border-bottom: 3px;
+}
 
 /* Intro section */
 .intro{
@@ -209,33 +192,18 @@ width: 120px;
 
 .intro__img{
     grid-area: img;
-    min width: 50;
+    min-width: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300, 350;
-}
-
-
-/* Multimediedesign */
-
-.section__title--introduktion{
-  position: relative;
-  text-align: center;
-}
-
-.introduktion{
-  position: relative;
-  text-align: center;
-
+    width: 450px;
+    height: 340px;
 }
 
 
 /* Mine projekter */
 
 .mine-projekter {
-  background-image:
-  background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
 }
@@ -244,56 +212,135 @@ width: 120px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   align-items: center;
-
 }
 
 .portfolio__item{
   background: var(--clr-accent);
-
 }
 
 .portfolio__img{
-  transition:
-  transform 550ms cubic;
+  transition: transform 550ms;
+  width: 275px;
+  height: 275px;
 }
 
 
 /* Individuelle projekter */
+.projekt-txt{
+
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 50px;
+
+}
+
+.projektbox{
+  display: flex;
+
+}
+
+/* Selvportræt */
+.selvportraet{
+  margin-left: 10px;
+  margin-top: 10px;
+  clear: both;
+}
+
+.portraet__img{
+  height: 400px;
+  width: 310px;
+}
+
 /* Animation */
 .sprite{
   width: 493px;
   height: 493px;
   background: url(img/css.animation.png);
-animation: play 10s steps(22) infinite;
+  animation: play 10s steps(22) infinite;
 }
 
+#animation{
+  margin-left: 10px;
+  margin-top: 10px;
+  clear: both;
+}
 
 @keyframes play {
   0% {background-position: 0px;}
   100% {background-position: -11000px;}
+}
 
+/* Luftballon */
+
+.luftballon{
+  margin-left: 10px;
+  margin-top: 10px;
+  clear: both;
+}
+
+/* Puppy love app */
+
+.puppyloveapp{
+  margin-left: 10px;
+  margin-top: 10px;
+  clear: both;
+}
+
+/* Naturama "den flydende tidsrejse" */
+
+.naturama{
+  margin-left: 10px;
+  margin-top: 10px;
+  clear: both;
+}
+
+/* 3D Plakat sketchup */
+.sketchup-plakat{
+  margin-left: 10px;
+  margin-top: 10px;
+  clear: both;
+
+}
+/*om mig*/
+
+.om-mig__body{
+  margin-left: 100px;
+  margin-right: 350px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
-.animeretportræt{
-  float: left;
 
-}
-
-.text{
-  float:inherit;
+.om-mig__img{
+  float: right;
+  width:310px;
+  height:375px;
+  margin-left: 30px;
+  margin-right: 100px;
+  margin-bottom: 400px;
 }
 
 /*kontakt*/
 
+.kontakt{
+  margin-left: 100px;
+  margin-right: 270px;
+  text-align: left;
+  text-justify: inter-word;
+
+}
+
 .kontakt__img{
   grid-area: img;
   display: block;
-  position: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
-  height: 300px;
+  float: left;
+  width: 330px;
+  height: 400px;
+  margin-left: 270px;
+  margin-right: 40px;
+
+
 }
 
 /* footre */
@@ -301,11 +348,29 @@ animation: play 10s steps(22) infinite;
   background: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
-  margin-left: 0;
-  padding: 0rem;
+  position: relative;
+  padding: 1px;
   justify-content: space-between;
   line-height: 0.10;
   font-size: 14px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+
+}
+
+.footer__index{
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  position: fixed;
+  padding: 1px;
+  justify-content: space-between;
+  line-height: 0.10;
+  font-size: 14px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
 
 }
 

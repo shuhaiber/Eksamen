@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="dk" dir="ltr">
+<html lang="da" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="portfolio" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,9 @@
 
 
 <link rel="stylesheet" href="portfolio.css">
-<link rel="stylesheet" href="portfolio.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family
-=Oxygen:wght@700&family=Roboto+Slab:wght@200;300;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen:wght@700&family=Roboto+Slab:wght@200;300;700&display=swap" rel="stylesheet">
 
 
   </head>
@@ -19,17 +17,16 @@
   <body>
 
       <header>
-            <div class="logo">
-            <img src="img/logo.png" alt="logo" width="130px" height="94px">
-          </div>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo" style="width:130px;height:94px;"></a>
+        </div>
 
           <nav class="nav">
               <ul class="nav__list">
                   <li class="nav__item"><a href="index.html" class="nav__link">forside</a></li>
-                  <li class="nav__item"><a href="multimediedesign.html" class="nav__link">multimediedesign</a></li>
                   <li class="nav__item"><a href="projekter.html" class="nav__link">Projekter</a></li>
                   <li class="nav__item"><a href="ommig.html" class="nav__link">Om mig</a></li>
-                  <li class="nav__item"><a href="kontakt.html" class="nav__link">kontakt</a></li>
+                  <li class="nav__c2a"><a href="kontakt.html" class="nav__link">kontakt</a></li>
               </ul>
             </nav>
 
@@ -45,40 +42,34 @@
 
       <div class="portfolio">
 
-        <!--porfolio projekt 1 selvprotræt lavet i illustrator-->
-          <a href="#" class="portfolio__item">
-            <img src="img/animeretportraet.png" width="275px"height="275px" class="portfolio__img">
-          </a>
+        <!--porfolio projekt 1 selvportræt lavet i illustrator-->
+          <a href="#selvportraet1" class="portfolio__item">
+            <img src="img/animeretportraet.png" alt="selvportræt" class="portfolio__img"></a>
 
 
         <!--porfolio projekt 2 css.animation lavet i illustrator-->
-          <a href="" class="portfolio__item">
-            <img src="img/heliumballon.png" width="275px"height="275px" class="portfolio__img">
-          </a>
+          <a href="#animation" class="portfolio__item">
+            <img src="img/heliumballon.png" alt="css.animation" class="portfolio__img"></a>
 
 
         <!--porfolio projekt 3 mooving art workshop-->
-          <a href="#" class="portfolio__item">
-            <img src="img/luftballon.png" width="275px "height="275px" class="portfolio__img">
-          </a>
+          <a href="#luftballon1" class="portfolio__item">
+            <img src="img/luftballon.png" alt="moving-art" class="portfolio__img"></a>
 
 
         <!--porfolio projekt puppyloveapp -->
-          <a href="#" class="portfolio__item">
-            <img src="img/puppyapp.png" width="275px"height="275px" class="portfolio__img">
-          </a>
+          <a href="#puppylove" class="portfolio__item">
+            <img src="img/puppyapp.png" alt="puppylove" class="portfolio__img"></a>
 
 
         <!--porfolio projekt 5 installation naturama-->
-          <a href="#" class="portfolio__item">
-            <img src="img/spil.png" width="275px"height="275px" class="portfolio__img"
-          </a>
+          <a href="#naturama" class="portfolio__item">
+            <img src="img/spil.png" alt="Naturama-installation" class="portfolio__img"></a>
 
 
         <!--porfolio projekt 6 3D-sketchup-plakat-->
-          <a href="#" class="portfolio__item">
-            <img src="img/sketchup-plakat.png" width="275px"height="275px" class="portfolio__img"
-          </a>
+          <a href="#sketchup1" class="portfolio__item">
+            <img src="img/sketchup-plakat.png" alt="3D-sketchup" class="portfolio__img"></a>
 
       </div>
     </section>
@@ -89,28 +80,80 @@
 <!--INDIVIDUELLE PROJEKTER -->
 
 
-<!--porfolio projekt 1 selvprotræt lavet i illustrator-->
-
 
 
 <!-- css.animations  -->
 
-<section class="sprite">
-    <title>sprite animation</title>
-    <link rel="stylesheet" href="portfolio.css" width="250px"height="250px">
-</section>
+<div>
+<div class="sprite" id="animation">
+    <link rel="stylesheet" href="portfolio.css">
+</div>
+</div>
 
+<!-- selvprotræt lavet i illustrator-->
 
+<div class="projektbox">
+    <div class="selvportraet">
+      <a id="selvportraet1"><img src="img/animeretportraet-1.png" alt="selvportræt" class="portraet__img"></a>
+    </div>
+    <div> <h3 class="projekt-txt"> Animeret portræt </h3>
+    <p class="projekt-txt"> Har du et billede eller en tegning der skal illusteres, så tilbyder jeg alt fra logoer til animerede portrætter.
+    På billedet ses et portræt animeret i Adobe Illustrator. </p>
+    </div>
+</div>
 
 <!-- mooving art workshop -->
 
+<div class="projektbox">
+    <div class="luftballon">
+      <a id="luftballon1"><img src="img/luftballon2.png" alt="moving art" class="portfolio__img"></a>
+    </div>
+    <div> <h3 class="projekt-txt"> Moving art </h3>
+    <p class="projekt-txt"> Skal du have et stillestående billede til at bevæge sig i en kort animation,
+      måske som en reklame til facebook, instagram eller andet medie?
+      på billedet ses et maleri lavet om til bevægeligt billede (moving art).</p>
+    </div>
+</div>
+
 <!-- puppyloveapp -->
+<div class="projektbox">
+      <div class="puppyloveapp">
+      <a id="puppylove"><img src="img/hundeapp.png" alt="puppyloveapp" class="portfolio__img"></a>
+    </div>
+      <div> <h3 class="projekt-txt"> Dating app </h3>
+    <p class="projekt-txt"> Har du brug for hjælp til at visualisere din nye app?
+      Jeg kan hjælpe med design, layout og en mockup af appen, så du kan teste dens funktioner.
+      På billedet ses et mockup af en dating app konstrueret til hunde, så hunde kan møde andre hunde at
+      lege med.  </p>
+    </div>
+</div>
+
 
 <!-- installation naturama -->
+<div class="projektbox">
+    <div class="naturama">
+      <a id="naturama"><img src="img/spil.png" alt="naturama-spil" class="portfolio__img"></a>
+    </div>
+      <div> <h3 class="projekt-txt"> Den flydende tidsrejse </h3>
+    <p class="projekt-txt"> Mangler du en maskot eller blot grafiske elementer til din hjemmeside, app eller spil? Så kan jeg hjælpe dig
+      at skabe dit nye grafiske materiale. På billedet ses forsiden til et spil, hvor jeg har tegnet
+elementerne;  dinoen, planterne og overskriften.  </p>
+  </div>
+</div>
+
 
 <!-- 3D-sketchup-plakat -->
 
-
+<div class="projektbox">
+    <div class="sketchup-plakat">
+      <a id="sketchup1"><img src="img/3d-plakat.png" alt="3Dsketchup-plakat" class="portfolio__img"></a>
+    </div>
+      <div> <h3 class="projekt-txt"> 3D tegning</h3>
+    <p class="projekt-txt"> Har du en model eller en skitse som du gerne vil have realiseret i 3D, så er det noget jeg kan hjælpe med.
+      På billedet ses en plakat med en fysisk model og 3D visualiseringen af modellen.
+      3D modellen er konstrueret i programmet skethhup.   </p>
+      </div>
+</div>
 
 
 
@@ -123,26 +166,11 @@
 
 <!-- footer -->
 
-  <footer class="footer">
-      <style>
-          .footer {
-            position:relative;
-            left: 0;
-            bottom: 0;
-            padding: 1px 5px 5px 5px;
-            width: 100%;
-            background-color: var(--clr-dark);
-            color: var(--clr-light);
-            text-align: center;
-          }
-      </style>
-  </footer>
-
-<div class="footer">
-<p navn> Tania K. Clemensen</p>
-<p href="#tlf">Tlf: +45 26180180</p>
-<p href="#email" class="footer">Mail: tania.clemensen@hotmail.com</p>
-</div>
+<footer class="footer">
+  <p> Tania K. Clemensen</p>
+  <p>Tlf: +45 26180180</p>
+  <p class="footer__link">Mail: tania.clemensen@hotmail.com</p>
+</footer>
 
   </body>
 </html>
